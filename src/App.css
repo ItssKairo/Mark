@@ -1,0 +1,39 @@
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default padding and margin for full-screen experience */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Transition effect for slideshow */
+.fade-transition {
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Dashboard specific styles */
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.thumbnail {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.thumbnail.active {
+  border: 3px solid #3b82f6;
+}
